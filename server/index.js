@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(cors());
 
 
-mongoose.connect("mongodb+srv://Rithick:Rithickg567@cluster0.9qa8x.mongodb.net/myFirstDatabase?retryWrites=true&w=majority");
+mongoose.connect("");
 
 app.get("/getUsers", (req, res) => {
     UserModel.find({}, (err, result) => {
